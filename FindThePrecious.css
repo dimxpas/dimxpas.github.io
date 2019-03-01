@@ -1,0 +1,158 @@
+        /* Style de texte */
+*
+{
+  font-family: arial, calibri, serif;
+  color: rgb(65, 66, 68);
+}
+
+a
+{
+	color: rgb(65, 66, 68);
+}
+p
+{
+	text-align: justify;
+}
+
+h2
+{
+	color: rgb(102, 102, 102);
+	font-weight: 500;
+}
+
+
+.blanc
+{
+  color: rgb(255, 255, 255);
+}
+
+      /* Body */
+
+
+
+      /* Photo relous */
+.relative
+{
+	position: relative;
+  text-align: center;
+}
+
+.orange
+{
+	color: rgb(242, 141, 33);
+}
+.absoNom
+{
+	color: white;
+  font-size: 2em;
+  margin-top:40%;
+}
+
+.absolutephoto
+{
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.boxhoverGa
+{
+  display: inline-block;
+}
+
+.boxhoverPi
+{
+  display: inline-block;
+}
+
+.boxhoverGi
+{
+  display: inline-block;
+}
+
+.reward
+{
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  padding: 15px 10px 15px 10px; 
+  margin-top: 10px;
+}
+
+  /* Hover */
+.relative:hover .reward 
+{
+    display: none;
+}
+
+.relative:hover .absoNom 
+{
+  font-size: 1.2em;
+  margin-top: 90%;
+}
+
+.relative:hover .absolutephoto
+{
+  background-color: rgba(255, 255, 255, 0)
+}
+
+
+			/* Bannière */
+#relative
+{
+	position: relative;
+}
+
+.absolute
+{
+	position: absolute;
+	bottom: 0;
+	height: 150px;
+}
+
+.petith21
+{
+	font-size: 1em;
+}
+.petith2
+{
+	font-size: 0.7em;
+}
+
+
+      /* About the ring */
+
+table 
+{
+	border-width: 2px; 
+	border-style: solid; 
+	width:90%;
+	border-collapse: collapse;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 10px;
+ }
+
+td, th
+{ 
+	border-width: 2px;
+	border-style: solid;
+	border-color: black;
+	width:50%;
+	padding: 10px;
+	font-size: 0.8em;
+
+ }
+
+th
+{
+	background-color: rgb(179, 179, 179);
+	color: rgb(230, 230, 230);
+}
+
+.greytable
+{
+	background-color: rgb(230, 230, 230);
+}
+
