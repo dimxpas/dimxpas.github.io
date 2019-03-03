@@ -1,14 +1,51 @@
-        /* Style de texte */
-*
+        /* Font */
+
+@font-face
 {
-  font-family: arial, calibri, serif;
-  color: rgb(65, 66, 68);
+	font-family: 'Titres';
+	src: url('./AnironTitres/anicb.ttf') format('truetype');
 }
 
-a
+@font-face
+{
+	font-family: 'AutourTitres';
+	src: url('./annatarautourtitres/tngani.ttf');
+}
+
+@font-face
+{
+	font-family: 'Textebase';
+	src: url('./Policetextes/partybusiness.ttf');
+}
+
+        /* Style de texte */
+p
+{
+  	font-family: 'Textebase';
+  	color: rgb(65, 66, 68);
+}
+
+h1, h2, h3, h4, header a, ul
+{
+	font-family: 'Titres';
+}
+
+header a
+{
+	font-size: 12px;
+
+}
+
+a:hover
+{
+	color: rgb(242, 141, 33);
+}
+
+.pills
 {
 	color: rgb(65, 66, 68);
 }
+
 p
 {
 	text-align: justify;
@@ -16,25 +53,88 @@ p
 
 h2
 {
-	color: rgb(102, 102, 102);
 	font-weight: 500;
+	font-size: 25px;
 }
 
+.h2b
+{
+	color: rgb(0, 0, 0);
+}
+
+.h2w
+{
+	color: rgb(255, 255, 255);
+}
+.Autour
+{
+	font-family: 'AutourTitres';
+}
 
 .blanc
 {
-  color: rgb(255, 255, 255);
+  	color: rgb(255, 255, 255);
 }
 
-      /* Body */
+.underl
+{
+	text-decoration: underline;
+	color: rgb(242, 141, 33);
+}
+      /* hr */
+hr 
+{
+	width:400px;
+	color: rgb(255, 115, 0);
+}
 
 
+      /* Navbar */
+nav
+{
+	background-color: rgb(255, 115, 0);
+}
+
+.borderr
+{
+	border-right: solid white;
+}
+
+footer
+{
+	background-color: rgb(255, 115, 0);
+}
+
+footer a 
+{
+	text-decoration: none;
+	color: white;
+}
+
+	/* Background */
+.bglight
+{
+	background-image: url('https://image.noelshack.com/fichiers/2019/09/7/1551625510-bg-light.png');
+}
+
+.bgdark
+{
+	background-image: url('https://image.noelshack.com/fichiers/2019/09/7/1551626521-bg-dark.png');
+}
+
+
+		/* Fellows */
 
       /* Photo relous */
+.nomfam
+{
+	font-family: 'Textebase';
+}
+
 .relative
 {
 	position: relative;
-  text-align: center;
+	text-align: center;
 }
 
 .orange
@@ -44,72 +144,83 @@ h2
 .absoNom
 {
 	color: white;
-  font-size: 2em;
-  margin-top:40%;
+  	font-size: 50px;
+  	margin-top:40%;
 }
 
 .absolutephoto
 {
-  background: rgba(255, 255, 255, 0.5);
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 100%;
+	background: rgba(0, 0, 0, 0.4);
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;
 }
 
 .boxhoverGa
 {
-  display: inline-block;
+  	display: inline-block;
 }
 
 .boxhoverPi
 {
-  display: inline-block;
+  	display: inline-block;
 }
 
 .boxhoverGi
 {
-  display: inline-block;
+  	display: inline-block;
 }
 
+.rewardGim
+{
+	margin-top: 10px;
+	padding: 15px 10px 15px 10px; 
+	color: rgb(242, 141, 33);
+	font-size: 50px;
+}
 .reward
 {
-  background: rgba(255, 255, 255, 0.7);
-  border-radius: 10px;
-  padding: 15px 10px 15px 10px; 
-  margin-top: 10px;
+	background: rgba(255, 255, 255, 0.7);
+	border-radius: 10px;
+	padding: 15px 10px 15px 10px; 
+	margin-top: 10px;
+	font-size: 30px;
+}
+
+.bgblack
+{
+	background-color: rgb(0,0,0);
 }
 
   /* Hover */
+
 .relative:hover .reward 
+{
+    display: none;
+}
+
+.relative:hover .rewardGim 
 {
     display: none;
 }
 
 .relative:hover .absoNom 
 {
-  font-size: 1.2em;
-  margin-top: 90%;
+	font-size: 30px;
+	margin-top: 90%;
 }
 
 .relative:hover .absolutephoto
 {
-  background-color: rgba(255, 255, 255, 0)
+  	background-color: rgba(255, 255, 255, 0)
 }
-
-
-			/* Bannière */
-#relative
+		/* sous-titres */
+.grandst
 {
-	position: relative;
+	font-size: 28px;
 }
 
-.absolute
-{
-	position: absolute;
-	bottom: 0;
-	height: 150px;
-}
 
 .petith21
 {
@@ -155,4 +266,11 @@ th
 {
 	background-color: rgb(230, 230, 230);
 }
+
+		/* Footer */
+footer ul
+{
+	list-style-type: none;
+}
+
 
