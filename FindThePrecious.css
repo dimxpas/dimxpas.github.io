@@ -111,6 +111,20 @@ footer a
 	color: white;
 }
 
+
+		/* Bannière */
+.Bann1
+{
+	color: white;
+	font-size: 60px;
+}
+
+.Bann2
+{
+	color: white;
+	font-size: 40px;
+}
+
 	/* Background */
 .bglight
 {
