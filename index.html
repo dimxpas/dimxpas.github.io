@@ -162,6 +162,7 @@
             <p><input class="w-100" size="30" type="email" name="email" id="email" placeholder="john@doe.com"/></p>
             <p><input class="w-100" type="text" name="object" id="object" placeholder="Objet">
             <p><textarea class="w-100" cols="20" rows="3" type="text "name="message" id="message" placeholder="Ton Message"></textarea></p>
+            <p class="text-center"><button class="btn-main">Envoyer</button></p>
           </div>
         </fieldset>
       </form>
@@ -271,7 +272,7 @@
 
   $(".project-block").on("mouseenter mouseleave", function() {
     name_block = $(this)[0].className.replace("project-block ", "").replace("-block", "");
-    console.log(name_block);
+//     console.log(name_block);
     $("." + name_block + "-logo, ." + name_block + "-content").toggleClass("hidden");
   });
 
