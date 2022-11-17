@@ -1,290 +1,263 @@
-        /* Font */
+/* Font */
 
 @font-face
 {
-	font-family: 'Titres';
-	src: url('./AnironTitres/anicb.ttf') format('truetype');
-}
-
-@font-face
-{
-	font-family: 'AutourTitres';
-	src: url('./annatarautourtitres/tngani.ttf');
+	font-family: 'BungeeInline';
+	src: url('../fonts/BungeeInline/BungeeInline-Regular.ttf');
 }
 
 @font-face
 {
-	font-family: 'Textebase';
-	src: url('./Policetextes/partybusiness.ttf');
+	font-family: 'ethnocentric';
+	src: url('../fonts/ethnocentric/ethnocentric-rg.ttf');
 }
 
-        /* Style de texte */
-p
-{
-  	font-family: 'Textebase';
-  	color: rgb(65, 66, 68);
+body {
+	background-color: #e9e9e9;
+	color: #2a2a2a;
+	font-family: 'ethnocentric';
+	-webkit-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
 }
 
-h1, h2, h3, h4, header a, ul
-{
-	font-family: 'Titres';
-}
-
-header a
-{
-	font-size: 12px;
-
-}
-
-a:hover
-{
-	color: rgb(242, 141, 33);
-}
-
-.pills
-{
-	color: rgb(65, 66, 68);
-}
-
-p
-{
-	text-align: justify;
-}
-
-h2
-{
-	font-weight: 500;
-	font-size: 25px;
-}
-
-.h2b
-{
-	color: rgb(0, 0, 0);
-}
-
-.h2w
-{
-	color: rgb(255, 255, 255);
-}
-.Autour
-{
-	font-family: 'AutourTitres';
-}
-
-.blanc
-{
-  	color: rgb(255, 255, 255);
-}
-
-.underl
-{
-	text-decoration: underline;
-	color: rgb(242, 141, 33);
-}
-      /* hr */
-hr 
-{
-	width:400px;
-	color: rgb(255, 115, 0);
+.darkmode {
+	background-color: #2a2a2a !important;
+	color: #d6d6d6 !important;
 }
 
 
-      /* Navbar */
-nav
-{
-	background-color: rgb(255, 115, 0);
+/* navbar */
+
+/* .navbar {
+	background: #2a2a2a !important;
+	color: #d6d6d6 !important;
+} */
+
+/* .navbar.navbar-revert {
+	background: #e9e9e9 !important;
+	color: #2a2a2a !important;
 }
 
-.borderr
-{
-	border-right: solid white;
+.nav-to-body {
+	height: 10px;
+	background-image: linear-gradient(#2a2a2a, #e9e9e9);
 }
 
-footer
-{
-	background-color: rgb(255, 115, 0);
+.nav-to-body-revert {
+	height: 10px;
+	background-image: linear-gradient(#e9e9e9, #2a2a2a);
+} */
+
+.hidden {
+	display: none !important;
 }
 
-footer a 
-{
-	text-decoration: none;
-	color: white;
+.blurp {
+	display: inline-block;
+	-webkit-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+.animated {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both
+}
+.blurpMove {
+	-webkit-animation-name: blurpMove;
+	animation-name: blurpMove;
+	color: #9acd32 !important;
+}
+@keyframes blurpMove {
+	0% {-webkit-transform:translate(1, 1, 1);transform:scale3d(1, 1, 1)}
+	30% {-webkit-transform:scale3d(1.25, 0.75, 1);transform:scale3d(1.25, 0.75, 1)}
+	40% {-webkit-transform:scale3d(0.75, 1.25, 1);transform:scale3d(0.75, 1.25, 1)}
+	50% {-webkit-transform:scale3d(1.15, 0.85, 1);transform:scale3d(1.15, 0.85, 1)}
+	65% {-webkit-transform:scale3d(0.95, 1.05, 1);transform:scale3d(0.95, 1.05, 1)}
+	75% {-webkit-transform:scale3d(1.05, 0.95, 1);transform:scale3d(1.05, 0.95, 1)}
+	100% {-webkit-transform:scale3d(1, 1, 1);transform:scale3d(1, 1, 1)}
+}
+@-webkit-keyframes blurpMove {
+	0% {-webkit-transform:translate(1, 1, 1);transform:scale3d(1, 1, 1)}
+	30% {-webkit-transform:scale3d(1.25, 0.75, 1);transform:scale3d(1.25, 0.75, 1)}
+	40% {-webkit-transform:scale3d(0.75, 1.25, 1);transform:scale3d(0.75, 1.25, 1)}
+	50% {-webkit-transform:scale3d(1.15, 0.85, 1);transform:scale3d(1.15, 0.85, 1)}
+	65% {-webkit-transform:scale3d(0.95, 1.05, 1);transform:scale3d(0.95, 1.05, 1)}
+	75% {-webkit-transform:scale3d(1.05, 0.95, 1);transform:scale3d(1.05, 0.95, 1)}
+	100% {-webkit-transform:scale3d(1, 1, 1);transform:scale3d(1, 1, 1)}
 }
 
-
-		/* Bannière */
-.Bann1
-{
-	color: white;
-	font-size: 60px;
-}
-
-.Bann2
-{
-	color: white;
-	font-size: 40px;
-}
-
-	/* Background */
-.bglight
-{
-	background-image: url('https://image.noelshack.com/fichiers/2019/09/7/1551625510-bg-light.png');
-}
-
-.bgdark
-{
-	background-image: url('https://image.noelshack.com/fichiers/2019/09/7/1551626521-bg-dark.png');
-}
-
-
-		/* Fellows */
-
-      /* Photo relous */
-.nomfam
-{
-	font-family: 'Textebase';
-}
-
-.relative
-{
-	position: relative;
+.text-center {
 	text-align: center;
 }
 
-.orange
-{
-	color: rgb(242, 141, 33);
+/* navbar */
+
+.logo {
+	width: 3em;
 }
-.absoNom
-{
-	color: white;
-  	font-size: 50px;
-  	margin-top:40%;
+.logo-invert {
+	filter: invert();
+}
+.custom-control.custom-switch, .custom-control.custom-switch input, .custom-control.custom-switch label, .darkmode-switch {
+	cursor: pointer;
 }
 
-.absolutephoto
-{
-	background: rgba(0, 0, 0, 0.4);
+.darkmode-switch {
+	font-size: 1.5em;
+}
+
+/* .moon {
+	height: 3em;
+	width: 3em;
+	border-radius: 50%;
+	box-shadow: -15px 10px 0 0 #2a2a2a;
+}  */
+
+/* .moon {
+	height: 3em;
+	width: 3em;
+	border-radius: 50%;
+	background-color: #2a2a2a;
+} */
+
+.fixed {
+	top: 0;
+	position: fixed;
+}
+
+li.nav-item.active.borderr {
+	padding: 0.5rem 1rem;
+}
+
+li.nav-item.active.borderr:hover {
+	background: rgb(214, 214, 214);
+	color: #191919 !important;
+}
+
+
+/* Button */
+
+.btn-main {
+	position: relative;
+	line-height: 30px;
+	border: none;
+	background: linear-gradient(0deg, #0000002e 0%, #2e2e2e 100%);
+    color: #ffffff;
+	border-radius: 2px;
+}
+.btn-main:hover {
+	color: #171717;
+	background: transparent;
+	box-shadow: none;
+}
+.btn-main:before,
+.btn-main:after{
+	content: '';
 	position: absolute;
 	top: 0;
-	height: 100%;
+	right: 0;
+	height: 2px;
+	width: 0;
+	background: #171717;
+	box-shadow: -1px -1px 5px 0px #000000,
+	7px 7px 20px 0px #ffffff33,
+	4px 4px 5px 0px #ffffff33;
+	transition:400ms ease all;
+}
+.btn-main:after{
+	right:inherit;
+	top:inherit;
+	left:0;
+	bottom:0;
+}
+.btn-main:hover:before,
+.btn-main:hover:after{
 	width: 100%;
-}
-
-.boxhoverGa
-{
-  	display: inline-block;
-}
-
-.boxhoverPi
-{
-  	display: inline-block;
-}
-
-.boxhoverGi
-{
-  	display: inline-block;
-}
-
-.rewardGim
-{
-	margin-top: 10px;
-	padding: 15px 10px 15px 10px; 
-	color: rgb(242, 141, 33);
-	font-size: 50px;
-}
-.reward
-{
-	background: rgba(255, 255, 255, 0.7);
-	border-radius: 10px;
-	padding: 15px 10px 15px 10px; 
-	margin-top: 10px;
-	font-size: 30px;
-}
-
-.bgblack
-{
-	background-color: rgb(0,0,0);
-}
-
-  /* Hover */
-
-.relative:hover .reward 
-{
-    display: none;
-}
-
-.relative:hover .rewardGim 
-{
-    display: none;
-}
-
-.relative:hover .absoNom 
-{
-	font-size: 30px;
-	margin-top: 90%;
-}
-
-.relative:hover .absolutephoto
-{
-  	background-color: rgba(255, 255, 255, 0)
-}
-		/* sous-titres */
-.grandst
-{
-	font-size: 28px;
+	transition: 800ms ease all;
 }
 
 
-.petith21
-{
-	font-size: 1em;
-}
-.petith2
-{
-	font-size: 0.7em;
+/* Project */
+
+.hold-loader {
+	background: url(../img/loader.gif) center center no-repeat;
 }
 
+.carousel-control-next, .carousel-control-prev {
+	width: auto;
+}
 
-      /* About the ring */
+.carousel-inside {
+	padding: 25px 50px;
+}
 
-table 
-{
-	border-width: 2px; 
-	border-style: solid; 
-	width:90%;
-	border-collapse: collapse;
-	text-align: center;
+.d-block {
+	width: 300px;
 	margin: auto;
-	margin-bottom: 10px;
- }
-
-td, th
-{ 
-	border-width: 2px;
-	border-style: solid;
-	border-color: black;
-	width:50%;
-	padding: 10px;
-	font-size: 0.8em;
-
- }
-
-th
-{
-	background-color: rgb(179, 179, 179);
-	color: rgb(230, 230, 230);
+	transition: transform .3s;
 }
 
-.greytable
-{
-	background-color: rgb(230, 230, 230);
+.d-block:hover {
+	/* width: 300px; */
+	-ms-transform: scale(1.15); /* IE 9 */
+	-webkit-transform: scale(1.15); /* Safari 3-8 */
+	transform: scale(1.15);
 }
 
-		/* Footer */
-footer ul
-{
-	list-style-type: none;
+.project-block {
+	border-radius: 10px;
+	height: 200px;
+	line-height: 200px;
+	transition: transform .3s;
+	border: 2px solid;
 }
 
+.project-block:hover {
+	-ms-transform: scale(1.15); /* IE 9 */
+	-webkit-transform: scale(1.15); /* Safari 3-8 */
+	transform: scale(1.15);
+}
 
+.shakerclub-block, .biskit-block, .fm-block, .webils-block {
+	background: #191b18;
+	font-family: "BungeeInline";
+	text-align: center;
+}
+
+/* .shakerclub-logo, .biskit-logo, .fm-logo, .webils-logo, .shakerclub-content, .biskit-content, .fm-content, .webils-content {
+	transition: transform 1s;
+} */
+
+.webils-block {
+	background-color: #ededed;
+}
+
+.shakerclub-logo, .biskit-logo {
+	font-size: 2.7em;
+}
+
+.fm-logo, .webils-logo {
+	width: 150px;
+}
+
+.shakerclub-logo {
+	color: #f0a637;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #f0a637, 0 0 35px #f0a637, 0 0 40px #f0a637, 0 0 50px #f0a637, 0 0 75px #f0a637;
+}
+
+.biskit-logo {
+	color: #42c52e;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #42c52e, 0 0 35px #42c52e, 0 0 40px #42c52e, 0 0 50px #42c52e, 0 0 75px #42c52e;
+}
+
+.logo-contact-pro a {
+	color: inherit;
+	font-size: 1.5em;
+}
+
+.small-text-footer {
+	font-size: 0.5em;
+}
