@@ -261,3 +261,13 @@ li.nav-item.active.borderr:hover {
 .small-text-footer {
 	font-size: 0.5em;
 }
+
+.link-none {
+	color: inherit;
+	text-decoration: none;
+}
+
+.link-none:hover {
+	color: inherit;
+	text-decoration: none;
+}
