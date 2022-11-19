@@ -221,6 +221,22 @@ li.nav-item.active.borderr:hover {
 	transform: scale(1.15);
 }
 
+.col-sm-12:hover {
+	z-index: 9999;
+}
+
+.project-block.fm-block {
+	background-image: url(../img/fm_production/dark-cloud-forest.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.project-block.biskit-block, .project-block.shakerclub-block {
+	background-image: url(../img/biskit/bord.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
 .shakerclub-block, .biskit-block, .fm-block, .webils-block {
 	background: #191b18;
 	font-family: "BungeeInline";
