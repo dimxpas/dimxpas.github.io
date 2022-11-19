@@ -80,9 +80,8 @@
         <div class="col-sm-12 col-lg-6 col-xl-4 mb-4">
           <div class="project-block webils-block">
             <img class="webils-logo" src="src/img/webils/logo_webils.png">
-            <div class="webils-content hidden">
-              <p>En cours de création...</p>
-<!--               <p>Webils est un progiciel de gestion.</p> -->
+            <div class="project-content webils-content hidden">
+              <p>Webils est un progiciel de gestion.</p>
             </div>
           </div>
         </div>
@@ -90,9 +89,8 @@
         <div class="col-sm-12 col-lg-6 col-xl-4 mb-4">
           <div class="project-block shakerclub-block">
             <span class="shakerclub-logo">Shakerclub</span>
-            <div class="shakerclub-content hidden">
-              <p>En cours de création...</p>
-<!--               <p>ShakerClub est un site de cocktail.</p> -->
+            <div class="project-content shakerclub-content hidden">
+              <p>ShakerClub est un site de cocktail.</p>
             </div>
           </div>
         </div>
@@ -100,9 +98,8 @@
         <div class="col-sm-12 col-lg-6 col-xl-4 mb-4">
           <div class="project-block biskit-block">
             <span class="biskit-logo">Biskit</span>
-            <div class="biskit-content hidden">
-              <p>En cours de création...</p>
-<!--               <p>Biskit est un site lanceur de dès avec règles.</p> -->
+            <div class="project-content biskit-content hidden">
+              <p>Biskit est un site lanceur de dès avec règles.</p>
             </div>
           </div>
         </div>
@@ -110,9 +107,8 @@
         <div class="col-sm-12 col-lg-6 col-xl-4 mb-4">
           <div class="project-block fm-block">
             <img class="fm-logo" src="src/img/fm_production/logo_fm_production.png">
-            <div class="fm-content hidden">
-              <p>En cours de création...</p>
-<!--               <p>FM est un portfolio en ligne en cours de création.</p> -->
+            <div class="project-content fm-content hidden">
+              <p>FM est un portfolio en ligne en cours de création.</p>
             </div>
           </div>
         </div>
@@ -167,7 +163,7 @@
         </fieldset>
       </form> -->
       <p>Pour plus d'informations sur mes projets ou pour une prise de contact, n'hésitez pas !</p>
-      <p class="text-center"><button class="btn-main"><a class='link-none' href="mailto:dimitri.pasq@gmail.com">Envoyer un mail</a></button></p>
+      <p class="text-center"><button class="btn-main to-invert"><a class='link-none' href="mailto:dimitri.pasq@gmail.com">Envoyer un mail</a></button></p>
     </section>
   </div> 
 
@@ -269,7 +265,7 @@
   // $("#customSwitches").on("change", function() {
   $(".darkmode-switch").on("click", function() {
     $("body").toggleClass("darkmode");
-    $(".logo, .carousel-control-next-icon, .carousel-control-prev-icon, .btn-main").toggleClass("logo-invert");
+    $(".logo, .carousel-control-next-icon, .carousel-control-prev-icon, .btn-main.to-invert").toggleClass("logo-invert");
   });
 
   $(".project-block").on("mouseenter mouseleave", function() {
