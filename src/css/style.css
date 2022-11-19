@@ -243,6 +243,21 @@ li.nav-item.active.borderr:hover {
 	text-align: center;
 }
 
+.project-content {
+	line-height: initial;
+	display: inline-block;
+	font-family: 'ethnocentric';
+	vertical-align: middle;
+}
+
+.webils-content {
+	color: #2a2a2a !important;
+}
+
+.biskit-content, .shakerclub-content, .fm-content {
+	color: #d6d6d6 !important;
+}
+
 /* .shakerclub-logo, .biskit-logo, .fm-logo, .webils-logo, .shakerclub-content, .biskit-content, .fm-content, .webils-content {
 	transition: transform 1s;
 } */
