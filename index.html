@@ -4,7 +4,6 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Pasquier Dimitri</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link src="src/fonts/ethnocentric/ethnocentric-rg" rel="stylesheet" type="text/css"/>
   <link rel="stylesheet" type="text/css" href="src/css/style.css">
   <link rel="apple-touch-icon" sizes="180x180" href="src/img/favicon/apple-touch-icon.png">
@@ -16,29 +15,7 @@
 
 <body>
   
-    <!-- Navbar -->
-    <!-- <header> -->
-        <!-- <nav class="navbar navbar-expand-lg navbar-dark">
-          <a class="navbar-brand mr-5" href="index.html"><img class='logo' src="src/img/big-logo.png" alt="Logo"> </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item active borderr">
-                <a class="nav-link underl" href="project.html">Mes Projets</a>
-              </li>
-              <li class="nav-item active ml-1 borderr">
-                <a class="nav-link" href="skill.html">Mes Compétences</a>
-              </li>
-              <li class="nav-item active ml-1 borderr">
-                <a class="nav-link" href="language.html">Mes Languages</a>
-              </li>
-            </ul>
-          </div>
-        </nav> -->
-    <!-- </header> -->
-
+  <!-- Navbar -->
   <nav class="navbar">
     <div class="container">
       <div class="row">
@@ -117,38 +94,6 @@
           </div>
         </div>
       </div>
-
-      <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active" id='shakerClub' onclick="redirectToProject(this.id)">
-            <h3 class='text-center'>Shaker Club</h3>
-            <img class="d-block" src="src/img/shakerClubHome.png" alt="First slide">
-            <p class="carousel-inside">Shaker Club est un site de coktails, réalisé en javascript, avec la library jQuery et l'api TheCocktailDB.</p>
-            <div class="text-center">
-              <button class="btn-main">Tester le projet</button>
-            </div>
-          </div>
-          <div class="carousel-item" id='biskit' onclick="redirectToProject(this.id)">
-            <h3 class='text-center'>Biskit</h3>
-            <img class="d-block" src="src/img/biskitHome.png" alt="Second slide">
-            <p class="carousel-inside">Biskit est un site inspiré du jeu d'alcool le biskit se jouant avec des dés, ce site a été réalisé en javascript, avec la library jQuery.</p>
-            <div class="text-center"><button class="btn-main">Tester le projet</button></div>
-          </div>
-          <div class="carousel-item" id='testVr' onclick="redirectToProject(this.id)">
-            <h3 class='text-center'>Test VR</h3>
-            <p class="carousel-inside">Test Vr est un site à uiliser avec son portable où l'on peut voir quelques objets en vr via des QR codes, ce site a été réalisé avec la library AR.js.</p>
-            <div class="text-center"><button class="btn-main">Tester le projet</button></div>
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon logo-invert" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon logo-invert" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div> -->
     </section>
 
     <!-- Contact -->
@@ -190,7 +135,6 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   
 </body>
 
@@ -199,7 +143,7 @@
 <script type="text/javascript">
 
   function redirectToProject(id) {
-    location.replace('file:///D:/Documents/Code/dimxpas.github.io/project.html#'+id);
+    location.replace('https://dimxpas.github.io/project.html#'+id);
   }
 
   // set up text to print, each item in array is new line
@@ -218,7 +162,6 @@
   var iIndex = 0; // start printing array at this posision
   var iArrLength = aText[0].length; // the length of the text array
   var iScrollAt = 20; // start scrolling up at this many lines
-  
   var iTextPos = 0; // initialise text position
   var sContents = ''; // initialise contents variable
   var iRow; // initialise current row
@@ -227,14 +170,6 @@
     sContents =  ' ';
     iRow = Math.max(0, iIndex-iScrollAt);
     var destination = document.getElementById("typedtext");
-    // while ( iRow < iIndex ) {
-    //   sContents += aText[iRow++] + '<br />';
-    //   destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
-    //   if (iIndex <= 8) {
-    //     iIndex++;
-    //   }
-    // }
-
     while ( iRow < iIndex ) {
       sContents += aText[iRow++] + '<br />';
     }
@@ -256,7 +191,6 @@
   $("#typedtext").on("click", function() {
     iSpeed = 0;
     aSpeed = 0;
-    // iIndex = 1;
   });
 
   $(".blurp").mouseenter(function() {
@@ -266,7 +200,6 @@
     }, 1000);
   });
 
-  // $("#customSwitches").on("change", function() {
   $(".darkmode-switch").on("click", function() {
     $("body").toggleClass("darkmode");
     $(".logo, .carousel-control-next-icon, .carousel-control-prev-icon, .btn-main.to-invert").toggleClass("logo-invert");
@@ -274,15 +207,7 @@
 
   $(".project-block").on("mouseenter mouseleave", function() {
     name_block = $(this)[0].className.replace("project-block ", "").replace("-block", "");
-//     console.log(name_block);
     $("." + name_block + "-logo, ." + name_block + "-content").toggleClass("hidden");
   });
-
-  // $(".darkmode-switch").on("mouseenter mouseleave", function() {
-  //   $("body").toggleClass("darkmode");
-  //   // $(".darkmode-switch i").toggleClass("logo-invert");
-  //   // $("button").toggleClass("btn-dark btn-light");
-  //   $(".logo, .carousel-control-next-icon, .carousel-control-prev-icon, .btn-main").toggleClass("logo-invert");
-  // });
 
 </script>
