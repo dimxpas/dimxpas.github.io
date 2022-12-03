@@ -438,6 +438,40 @@ li.nav-item.active.borderr:hover {
 	padding: 10px;
 }
 
+.logo-language {
+	font-size: 1.5em;
+}
+.fa-html5 {
+	color: #d74a24;
+}
+.fa-css3-alt {
+	color: #3491cb;
+}
+.fa-php {
+	color: #7175aa;
+}
+.fa-square-js {
+	color: #ead41c;
+}
+.fa-vuejs {
+	color: #49b180
+}
+.adaptative-icon {
+	margin-bottom: -2px;
+	border-radius: 3px;
+	width: 22px;
+	height: 22px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+.jquery-img {
+	background-image: url(../img/jquery_logo.png);
+}
+.tcdb-img {
+	background-image: url(../img/theCocktailDB_logo.png);
+}
+
 .webils-content {
 	color: #2a2a2a !important;
 }
