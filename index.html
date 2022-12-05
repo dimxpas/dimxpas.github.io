@@ -236,5 +236,14 @@
     name_block = $(this)[0].className.replace("project-block ", "").replace("-block", "");
     $("." + name_block + "-logo, ." + name_block + "-content").toggleClass("hidden");
   });
+  
+    $.ajax({
+      url : './src/datas/datas_language.json',
+      type : 'GET',
+      dataType : 'json',
+      success : function(languages){
+        console.log(languages);
+      }
+    });
 
 </script>
