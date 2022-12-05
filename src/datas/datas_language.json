@@ -1,9 +1,1 @@
-{"language_project":[
-    {"code_language":"html","name_language":"HTML","class_langage":"fa-brands fa-html5"},
-    {"code_language":"css","name_language":"CSS","class_langage":"fa-brands fa-css3-alt"},
-    {"code_language":"php","name_language":"PHP","class_langage":"fa-brands fa-php"},
-    {"code_language":"js","name_language":"JavaScript","class_langage":"fa-brands fa-square-js"},
-    {"code_language":"jquery","name_language":"JQuery","class_langage":"adaptative-icon jquery-img"},
-    {"code_language":"vue","name_language":"Vue.js","class_langage":"fa-brands fa-vuejs"},
-    {"code_language":"tcdb","name_language":"TheCocktailDB","class_langage":"adaptative-icon tcdb-img"}],
-}
+{"language_project":[{"code_language":"html","name_language":"HTML","class_langage":"fa-brands fa-html5"},{"code_language":"css","name_language":"CSS","class_langage":"fa-brands fa-css3-alt"},{"code_language":"php","name_language":"PHP","class_langage":"fa-brands fa-php"},{"code_language":"js","name_language":"JavaScript","class_langage":"fa-brands fa-square-js"},{"code_language":"jquery","name_language":"JQuery","class_langage":"adaptative-icon jquery-img"},{"code_language":"vue","name_language":"Vue.js","class_langage":"fa-brands fa-vuejs"},{"code_language":"tcdb","name_language":"TheCocktailDB","class_langage":"adaptative-icon tcdb-img"}]}
