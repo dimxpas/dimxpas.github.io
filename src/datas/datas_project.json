@@ -1,40 +1,39 @@
 {
-    "projects": [
-        {
-            "code_name_project": "webils",
-            "code_class_project": "webils",
-            "name_project": "Webils",
-            "img_project": "logo_webils.png",
-            "mini_description_project": "Webils est un progiciel de gestion.",
-            "description_project": "",
-            "language_project": "html;css;php;js;jquery;vue",
-        },
-        {
-            "code_name_project": "shakerClub",
-            "code_class_project": "shakerclub",
-            "name_project": "ShakerClub",
-            "img_project": "",
-            "mini_description_project": "ShakerClub est un site de cocktail.",
-            "description_project": "",
-            "language_project": "html;css;js;jquery;tcdb",
-        },
-        {
-            "code_name_project": "biskit",
-            "code_class_project": "biskit",
-            "name_project": "Biskit",
-            "img_project": "",
-            "mini_description_project": "Biskit est un lanceur de dès aléatoire avec des règles.",
-            "description_project": "",
-            "language_project": "html;css;js;jquery",
-        },
-        {
-            "code_name_project": "fm_production",
-            "code_class_project": "fm",
-            "name_project": "FM Production",
-            "img_project": "logo_fm_production.png",
-            "mini_description_project": "FM Production est un portfolio en ligne, en cours de création.",
-            "description_project": "",
-            "language_project": "html;css;js;jquery",
-        },
-    ]
+	"projects": [{
+			"code_name_project": "webils",
+			"code_class_project": "webils",
+			"name_project": "Webils",
+			"img_project": "logo_webils.png",
+			"mini_description_project": "Webils est un progiciel de gestion.",
+			"description_project": "",
+			"language_project": "html;css;php;js;jquery;vue"
+		},
+		{
+			"code_name_project": "shakerClub",
+			"code_class_project": "shakerclub",
+			"name_project": "ShakerClub",
+			"img_project": "",
+			"mini_description_project": "ShakerClub est un site de cocktail.",
+			"description_project": "",
+			"language_project": "html;css;js;jquery;tcdb"
+		},
+		{
+			"code_name_project": "biskit",
+			"code_class_project": "biskit",
+			"name_project": "Biskit",
+			"img_project": "",
+			"mini_description_project": "Biskit est un lanceur de dès aléatoire avec des règles.",
+			"description_project": "",
+			"language_project": "html;css;js;jquery"
+		},
+		{
+			"code_name_project": "fm_production",
+			"code_class_project": "fm",
+			"name_project": "FM Production",
+			"img_project": "logo_fm_production.png",
+			"mini_description_project": "FM Production est un portfolio en ligne, en cours de création.",
+			"description_project": "",
+			"language_project": "html;css;js;jquery"
+		}
+	]
 }
