@@ -4,7 +4,7 @@
     "name_project": "Biskit",
     "img_project": "",
     "background_project": "bord.jpg",
-    "mini_description_project": "Biskit est un lanceur de dès aléatoire avec des règles.",
-    "description_project": "",
+    "mini_description_project": "Biskit est un simulateur de dès avec des règles.",
+    "description_project": "Le Biskit est un jeux d'alcool qui se joue avec des dès, suivant la combinaison des dès une règle est appliquée.\n Ce petit site est un projet sur lequel j'ai travaillé pendant la période covid en 2021 pour pouvoir jouer à distance avec des amis en effectuant un partage l'écran.\n",
     "language_project": "html;css;js;jquery"
 }
