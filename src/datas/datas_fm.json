@@ -1,12 +1,10 @@
 {
-    "fm": {
-        "code_name_project": "fm_production",
-        "code_class_project": "fm",
-        "name_project": "FM Production",
-        "img_project": "logo_fm_production.png",
-        "background_project": "dark-cloud-forest.jpg",
-        "mini_description_project": "FM Production est un portfolio en ligne, en cours de création.",
-        "description_project": "",
-        "language_project": "html;css;js;jquery"
-    }
+    "code_name_project": "fm_production",
+    "code_class_project": "fm",
+    "name_project": "FM Production",
+    "img_project": "logo_fm_production.png",
+    "background_project": "dark-cloud-forest.jpg",
+    "mini_description_project": "FM Production est un portfolio en ligne, en cours de création.",
+    "description_project": "",
+    "language_project": "html;css;js;jquery"
 }
