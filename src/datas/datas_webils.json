@@ -1,0 +1,12 @@
+{
+    "webils": {
+        "code_name_project": "webils",
+        "code_class_project": "webils",
+        "name_project": "Webils",
+        "img_project": "logo_webils.png",
+        "background_project": "#ededed",
+        "mini_description_project": "Webils est un progiciel de gestion.",
+        "description_project": "",
+        "language_project": "html;css;php;js;jquery;vue"
+    }
+}
