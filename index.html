@@ -12,6 +12,7 @@
   <link rel="manifest" href="src/img/favicon/site.webmanifest">
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
   <script src="https://kit.fontawesome.com/308913b5fd.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="src/js/global.js"></script>
 </head>
 
 <body>
@@ -165,75 +166,3 @@
 </body>
 
 </html>
-
-<script type="text/javascript">
-
-  function redirectToProject(id) {
-    location.replace('https://dimxpas.github.io/project.html#'+id);
-  }
-
-  // set up text to print, each item in array is new line
-  var aText = new Array(
-    "Bonjour,", 
-    "je m'appelle Dimitri,",
-    "j'ai commencé à coder fin 2018.",
-    "En février 2019, j'intègre la Wild Code School à Orléans pour 6 mois.",
-    "C'est en septembre 2019 que je rejoins l'entreprise Delixir où j'ai pu coder quelques sites et fonctionnalitées.",
-    "Sur ce site vous découvrirez mes projets, compétences ainsi que les languages acquis.",
-    "",
-    "Bienvenue et bonne visite à vous !"
-  );
-  var iSpeed = 30; // time delay of print out
-  var aSpeed = 500; // time delay of new line
-  var iIndex = 0; // start printing array at this posision
-  var iArrLength = aText[0].length; // the length of the text array
-  var iScrollAt = 20; // start scrolling up at this many lines
-  var iTextPos = 0; // initialise text position
-  var sContents = ''; // initialise contents variable
-  var iRow; // initialise current row
-
-  function typewriter() {
-    sContents =  ' ';
-    iRow = Math.max(0, iIndex-iScrollAt);
-    var destination = document.getElementById("typedtext");
-    while ( iRow < iIndex ) {
-      sContents += aText[iRow++] + '<br />';
-    }
-    destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
-    if ( iTextPos++ == iArrLength ) {
-      iTextPos = 0;
-      iIndex++;
-      if ( iIndex != aText.length ) {
-        iArrLength = aText[iIndex].length;
-        setTimeout("typewriter()", aSpeed);
-      }
-    } else {
-      setTimeout("typewriter()", iSpeed);
-    }    
-  }
-
-  typewriter();
-
-  $("#typedtext").on("click", function() {
-    iSpeed = 0;
-    aSpeed = 0;
-  });
-
-  $(".blurp").mouseenter(function() {
-    $(this).addClass("animated blurpMove");
-    setTimeout(() => {
-      $(this).removeClass("animated blurpMove");
-    }, 1000);
-  });
-
-  $(".darkmode-switch").on("click", function() {
-    $("body").toggleClass("darkmode");
-    $(".logo, .carousel-control-next-icon, .carousel-control-prev-icon, .btn-main.to-invert").toggleClass("logo-invert");
-  });
-
-  $(".project-block").on("mouseenter mouseleave", function() {
-    name_block = $(this)[0].className.replace("project-block ", "").replace("-block", "");
-    $("." + name_block + "-logo, ." + name_block + "-content").toggleClass("hidden");
-  });
-
-</script>
