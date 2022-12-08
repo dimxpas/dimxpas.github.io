@@ -4,7 +4,9 @@
     "name_project": "Webils",
     "img_project": "logo_webils.png",
     "background_project": "#ededed",
-    "mini_description_project": "Webils est un progiciel de gestion.",
-    "description_project": "",
+    "mini_description_project": "Webils est un prologiciel de planification et de facturation.",
+    "description_project": "Webils est un progiciel de gestion, sur lequel j'ai travaillé lorsque j'étais salarié dans l'entreprise Delixir.<br>Lors de ce projet j'ai trvaillé sur de nombreuses fontionnalités et affichages : <br>- le planning (type outlook et ressource, sélection de créneau, filtrage...), <br>les clients (CRUD), <br>-les prestations (CRUD), <br>- les documents (devis, bon de commande...), <br>et bien d'autres fonctionnalités.",
+    "pictures_project": "planning-outlook.png;planning-res.png;listing-customer.png;edit-customer.png;listing-vacation.png;products-vacation.png;edit-vacation.png;listing-quotation.jpg;edit-quotation.jpg;model-pdf.jpg;ils-hours.png;ils-indispo.png;ils-costs.png",
+    "link_project": "https://www.webils.fr/",
     "language_project": "html;css;php;js;jquery;vue"
 }
