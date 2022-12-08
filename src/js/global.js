@@ -81,10 +81,18 @@ jQuery(document).ready(function () {
                         // Ajout de l'affichage du projet dans la section projet
                         $("#projects_section").append(div_project);
                     });
-
+//                     Animation des block projets
                     $(".project-block").on("mouseenter mouseleave", function () {
                         name_block = $(this)[0].className.replace("project-block ", "").replace("-block", "");
-                        $("." + name_block + "-logo, ." + name_block + "-content").toggleClass("hidden");
+                        $("#projects_section ." + name_block + "-logo, ." + name_block + "-content").toggleClass("hidden");
+                        spanSpeed = 0;
+                        $("." + name_block + "-content .logo-language span").each(function(index) {
+                            setTimeout(() => {
+                                $(this).addClass("blurp animated blurpMove");
+                            }, spanSpeed);
+                            spanSpeed += 150;
+                        });
+                        $("." + name_block + "-content .logo-language span").removeClass("blurp animated blurpMove");
                     });
                 }
             });
