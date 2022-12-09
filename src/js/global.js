@@ -175,7 +175,7 @@ function openInfosProject(id_project) {
             }
             div_modal += "</div>";
             div_modal += "<div class='container mt-4'>" + datas_project.description_project + "</div>";
-            div_modal += "<div class='hold-loader'><iframe src='" + datas_project.link_project + "' title='" + datas_project.name_project + "' width='130%' height='500'></iframe></div>";
+            div_modal += "<div class='container hold-loader'><iframe src='" + datas_project.link_project + "' title='" + datas_project.name_project + "' width='130%' height='500'></iframe></div>";
             $(".modal-content").html(div_modal);
             $("#myModal").removeClass("hidden");
             // Pour fermer la modal
