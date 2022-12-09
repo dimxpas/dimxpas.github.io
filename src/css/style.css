@@ -76,7 +76,7 @@
 		max-width: 50%;
 	}
 	.col-lg-6:hover {
-		z-index: 9999;
+		z-index: 2;
 	}
 	.col-lg-12 {
 		flex: 100%;
