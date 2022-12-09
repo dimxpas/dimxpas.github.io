@@ -91,10 +91,6 @@ jQuery(document).ready(function () {
 
 });
 
-function redirectToProject(id) {
-    location.replace('file:///D:/Documents/Code/dimxpas.github.io/project.html#' + id);
-}
-
 // set up text to print, each item in array is new line
 var aText = new Array(
     "Bonjour,",
