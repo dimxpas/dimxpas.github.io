@@ -20,12 +20,6 @@ jQuery(document).ready(function () {
         $(".logo, .carousel-control-next-icon, .carousel-control-prev-icon, .btn-main.to-invert").toggleClass("logo-invert");
     });
 
-    window.onclick = function (event) {
-        if (event.target.id == "myModal") {
-            $("#myModal").addClass("hidden");
-        }
-    }
-
     // Récupération et affichages des projets
     $.ajax({
         url: 'https://dimxpas.github.io/src/datas/datas_project.json',
@@ -148,10 +142,40 @@ function typewriter() {
     }
 }
 
+window.onclick = function (event) {
+    if (event.target.id == "myModal") {
+        $("#myModal").addClass("hidden");
+        $(".modal-content").html("");
+        $("body").css("overflow", "auto");
+    }
+}
+
 function openInfosProject(id_project) {
-    $("#myModal").removeClass("hidden");
     background_project = $("." + id_project + "-block")[0].attributes["style"].value.split(":");
     color_project = $("." + id_project + "-content").css("color");
     $(".modal-content").removeAttr("style");
     $(".modal-content").css(background_project[0], background_project[1]).css("color", color_project);
+    $("body").css("overflow", "hidden");
+    // Récupération des datas du projets
+    $.ajax({
+        url: 'https://dimxpas.github.io/src/datas/datas_' + id_project + '.json',
+        type: 'GET',
+        dataType: 'json',
+        success: function (datas_project) {
+            // console.log(datas_project);
+            var code_project = datas_project.code_name_project;
+            var class_project = datas_project.code_class_project;
+            div_modal = "<div class='modal-title'><span class='close'>&times;</span>";
+            if (code_project == "biskit" || code_project == "shakerClub") {
+                div_modal += "<span class='" + class_project + "-logo'>" + datas_project.name_project + "</span>";
+            } else {
+                div_modal += "<img class='" + class_project + "-logo' src='src/img/" + code_project + "/" + datas_project.img_project + "'>";
+            }
+            div_modal += "</div>";
+            div_modal += "<div class='container mt-4'>" + datas_project.description_project + "</div>";
+            div_modal += "<div class='hold-loader'><iframe src='" + datas_project.link_project + "' title='" + datas_project.name_project + "' width='130%' height='500'></iframe></div>";
+            $(".modal-content").html(div_modal);
+            $("#myModal").removeClass("hidden");
+        }
+    });
 }
