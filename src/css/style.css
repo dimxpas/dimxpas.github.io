@@ -457,6 +457,10 @@ li.nav-item.active.borderr:hover {
 	line-height: 200px;
 	transition: transform .3s;
 	border: 2px solid;
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: "BungeeInline";
+	text-align: center;
 }
 
 .project-block:hover {
