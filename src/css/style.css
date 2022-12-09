@@ -315,6 +315,30 @@ body {
 	background-color: #00000099;
 }
 
+.modal.fade-in {
+	animation: modalFadeIn 0.5s;
+}
+@keyframes modalFadeIn {
+	0% {
+	  background-color:transparent;
+	}
+	100% {
+	  background-color:#00000099;
+	}
+}
+
+.modal.fade-out {
+	animation: modalFadeOut 0.5s;
+}
+@keyframes modalFadeOut {
+	0% {
+	  background-color:#00000099;
+	}
+	100% {
+	  background-color:transparent;
+	}
+}
+
 .modal-content {
 	background-color: #fefefe;
 	margin: auto;
@@ -323,6 +347,30 @@ body {
 	width: 80%;
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+
+.modal-content.move-up {
+	animation: moveUp 0.5s;
+}
+@keyframes moveUp {
+	0% {
+		transform:scale(0.5);
+	}
+	100% {
+		transform:scale(1);
+	}
+}
+
+.modal-content.move-down {
+	animation: moveDown 0.5s;
+}
+@keyframes moveDown {
+	0% {
+		transform:scale(1);
+	}
+	100% {
+		transform:scale(0);
+	}
 }
 
 .modal-title {
