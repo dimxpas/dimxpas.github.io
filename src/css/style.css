@@ -332,6 +332,7 @@ body {
 
 .close {
 	float: right;
+	cursor: pointer;
 }
 
 .hold-loader {
