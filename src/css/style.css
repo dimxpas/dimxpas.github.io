@@ -338,6 +338,8 @@ body {
 	width: 28px;
 	height: 28px;
 	font-family: 'Font Awesome 6 Brands';
+	border-radius: 50%;
+	border: 2px solid transparent;
 }
 
 .close:hover {
