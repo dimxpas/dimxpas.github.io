@@ -135,9 +135,13 @@ function typewriter() {
 }
 
 function closeModal() {
-    $("#myModal").addClass("hidden");
-    $(".modal-content").html("");
+    $(".modal-content").removeClass("move-up").addClass("move-down");
+    $("#myModal").removeClass("fade-in").addClass("fade-out");
     $("body").css("overflow", "auto");
+        setTimeout(() => {
+        $("#myModal").addClass("hidden");
+        $(".modal-content").html("");
+    }, 500);
 }
 
 window.onclick = function (event) {
@@ -151,6 +155,8 @@ function openInfosProject(id_project) {
     color_project = $("." + id_project + "-content").css("color");
     $(".modal-content").removeAttr("style");
     $(".modal-content").css(background_project[0], background_project[1]).css("color", color_project);
+    $("#myModal").removeClass("fade-out").addClass("fade-in");
+    $(".modal-content").removeClass("move-down").addClass("move-up");
     $("body").css("overflow", "hidden");
     // Récupération des datas du projets
     $.ajax({
