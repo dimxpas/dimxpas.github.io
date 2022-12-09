@@ -5,7 +5,6 @@ jQuery(document).ready(function () {
     $("#typedtext").on("click", function () {
         iSpeed = 0;
         aSpeed = 0;
-        // iIndex = 1;
     });
 
     $(".blurp").mouseenter(function () {
@@ -38,9 +37,6 @@ jQuery(document).ready(function () {
                         var code_project = data_project.code_name_project;
                         var class_project = data_project.code_class_project;
                         div_project = "<div class='col col-sm-12 col-lg-6 col-xl-4 mb-4'>";
-                        // avec le css existant
-                        // div_project += "<div class='project-block " + class_project + "-block'>";
-                        // en supprimant le css pour dynamiser
                         if (code_project == "webils") {
                             background_project = "background-color:" + data_project.background_project;
                         } else {
@@ -70,7 +66,7 @@ jQuery(document).ready(function () {
                         } else {
                             class_btn = " logo-invert";
                         }
-//                         div_project += "<button class='btn-main" + class_btn + "' onclick=\"openInfosProject('" + class_project + "')\">En savoir plus</button>";
+                        div_project += "<button class='btn-main" + class_btn + "' onclick=\"openInfosProject('" + class_project + "')\">En savoir plus</button>";
                         div_project += "</div></div></div>";
                         // Ajout de l'affichage du projet dans la section projet
                         $("#projects_section").append(div_project);
