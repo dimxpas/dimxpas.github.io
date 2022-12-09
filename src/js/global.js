@@ -138,11 +138,15 @@ function typewriter() {
     }
 }
 
+function closeModal() {
+    $("#myModal").addClass("hidden");
+    $(".modal-content").html("");
+    $("body").css("overflow", "auto");
+}
+
 window.onclick = function (event) {
     if (event.target.id == "myModal") {
-        $("#myModal").addClass("hidden");
-        $(".modal-content").html("");
-        $("body").css("overflow", "auto");
+        closeModal();
     }
 }
 
@@ -161,7 +165,7 @@ function openInfosProject(id_project) {
             // console.log(datas_project);
             var code_project = datas_project.code_name_project;
             var class_project = datas_project.code_class_project;
-            div_modal = "<div class='modal-title'><span class='close'>&times;</span>";
+            div_modal = "<div class='modal-title'><span class='close'><i class='fa-solid fa-xmark'></i></span>";
             if (code_project == "biskit" || code_project == "shakerClub") {
                 div_modal += "<span class='" + class_project + "-logo'>" + datas_project.name_project + "</span>";
             } else {
@@ -172,6 +176,10 @@ function openInfosProject(id_project) {
             div_modal += "<div class='hold-loader'><iframe src='" + datas_project.link_project + "' title='" + datas_project.name_project + "' width='130%' height='500'></iframe></div>";
             $(".modal-content").html(div_modal);
             $("#myModal").removeClass("hidden");
+            // Pour fermer la modal
+            $(".modal-content span.close").on("click", function() {
+                closeModal();
+            });
         }
     });
 }
