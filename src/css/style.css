@@ -333,6 +333,17 @@ body {
 .close {
 	float: right;
 	cursor: pointer;
+	font-size: 1em;
+	transition: all 0.3s ease-out;
+	width: 28px;
+	height: 28px;
+	font-family: 'Font Awesome 6 Brands';
+}
+
+.close:hover {
+	-webkit-transform: scale(0.8) rotateZ(90deg);
+	border-radius: 50%;
+	border: 2px solid;
 }
 
 .hold-loader {
