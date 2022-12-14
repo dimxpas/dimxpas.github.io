@@ -175,9 +175,21 @@ function openInfosProject(id_project) {
             }
             div_modal += "</div>";
             div_modal += "<div class='container mt-4'>" + datas_project.description_project + "</div>";
-            div_modal += "<div class='container hold-loader'><iframe src='" + datas_project.link_project + "' title='" + datas_project.name_project + "' width='130%' height='500'></iframe></div>";
+            if (color_project == "rgb(42, 42, 42)") {
+                loader_class = "dark";
+            } else {
+                loader_class = "light";
+            }
+            div_modal += "<div class='container hold-loader'><div class='loader-container'><span class='loader " + loader_class + "'></span></div><iframee id='myIframe' style='display:none;' src='" + datas_project.link_project + "' title='" + datas_project.name_project + "' width='130%' height='500'></iframe></div>";
             $(".modal-content").html(div_modal);
             $("#myModal").removeClass("hidden");
+            // Chargeent de l'iframe
+            $("#myIframe").on("load", function() {
+                $(".loader-container").fadeOut(300);
+                setTimeout(() => {
+                    $("#myIframe").fadeIn(500);
+                }, 300);
+            });
             // Pour fermer la modal
             $(".modal-content span.close").on("click", function() {
                 closeModal();
