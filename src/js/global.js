@@ -180,7 +180,7 @@ function openInfosProject(id_project) {
             } else {
                 loader_class = "light";
             }
-            div_modal += "<div class='container hold-loader'><div class='loader-container'><span class='loader " + loader_class + "'></span></div><iframee id='myIframe' style='display:none;' src='" + datas_project.link_project + "' title='" + datas_project.name_project + "' width='130%' height='500'></iframe></div>";
+            div_modal += "<div class='container hold-loader'><div class='loader-container'><span class='loader " + loader_class + "'></span></div><iframe id='myIframe' style='display:none;' src='" + datas_project.link_project + "' title='" + datas_project.name_project + "' width='130%' height='500'></iframe></div>";
             $(".modal-content").html(div_modal);
             $("#myModal").removeClass("hidden");
             // Chargeent de l'iframe
