@@ -231,10 +231,9 @@ function openInfosProject(id_project) {
             $("#myModal").removeClass("hidden");
             // Chargement de l'iframe
             $("#myIframe").on("load", function() {
-                $(".loader-container").fadeOut(300);
-                setTimeout(() => {
+                $(".hold-loader .loader-container").fadeOut(300, function() {
                     $("#myIframe").fadeIn(500);
-                }, 300);
+                });
             });
             // Pour fermer la modal
             $(".modal-content span.close").on("click", function() {
