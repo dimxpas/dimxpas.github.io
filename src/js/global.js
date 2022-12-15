@@ -174,7 +174,7 @@ function openInfosProject(id_project) {
                 div_modal += "<img class='" + class_project + "-logo' src='src/img/" + code_project + "/" + datas_project.img_project + "'>";
             }
             div_modal += "</div>";
-            div_modal += "<div class='container mt-4'>" + datas_project.description_project + "</div>";
+            div_modal += "<div class='container mt-4'><p>" + datas_project.description_project + "</p><p>Pour en savoir plus vous pouvez consultez " + datas_project.name_project + " ci-dessous, sinon <a href='" + datas_project.link_project + "' target='_blank'>cliquez ici</a>.</p></div>";
             if (color_project == "rgb(42, 42, 42)") {
                 loader_class = "dark";
             } else {
