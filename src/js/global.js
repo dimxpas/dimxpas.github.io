@@ -39,7 +39,7 @@ jQuery(document).ready(function () {
                     datas_projects.projects.forEach((data_project) => {
                         var code_project = data_project.code_name_project;
                         var class_project = data_project.code_class_project;
-                        div_project = "<div class='col col-sm-12 col-lg-6 col-xl-4 mb-4'>";
+                        div_project = "<div class='col col-sm-12 col-lg-6 col-xl-4 mb-4' style='display:none;'>";
                         if (code_project == "webils") {
                             background_project = "background-color:" + data_project.background_project;
                         } else {
@@ -76,8 +76,14 @@ jQuery(document).ready(function () {
                         // Ajout de l'affichage des projet dans la section projet
                         if (nb_projects == i) {
                             $(".loader-container").fadeOut(300, function() {
-                                $("#projects_section").append("<div id='projects_container' class='row' style='display:none;'>" + div_projects + "</div>");
-                                $("#projects_container").fadeIn(300);
+                                $("#projects_section").append("<div id='projects_container' class='row'>" + div_projects + "</div>");
+                                timei = 0;
+                                $("#projects_section .col").each(function() {
+                                    setTimeout(() => {
+                                        $(this).fadeIn(600);
+                                    }, timei);
+                                    timei += 400;
+                                });
                                 $(".project-block").on("mouseenter", function () {
                                     name_block = $(this)[0].className.replace("project-block ", "").replace("-block", "");
                                     $("#projects_section ." + name_block + "-logo").fadeOut(150, function() {
