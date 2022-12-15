@@ -5,7 +5,7 @@
     "img_project": "",
     "background_project": "bord.jpg",
     "mini_description_project": "Biskit est un simulateur de dès avec des règles.",
-    "description_project": "Le Biskit est un jeux d'alcool qui se joue avec des dès, suivant la combinaison des dès une règle est appliquée.<br> Ce petit projet a été réalisé pendant la période covid en 2021 pour pouvoir jouer à distance avec des amis en effectuant un partage d'écran. <br>L'objectif de ce projet était de me famiiariser davantage avec JavaScript.",
+    "description_project": "Le Biskit est un jeux d'alcool qui se joue avec des dès. <br>Suivant la combinaison des dès, une règle est appliquée.<br> Ce petit projet a été réalisé pendant la période covid en 2021 pour pouvoir jouer à distance avec des amis en effectuant un partage d'écran. <br>L'objectif de ce projet était de me famiiariser davantage avec JavaScript.",
     "pictures_project": "",
     "link_project": "https://dimxpas.github.io/Biskit/",
     "language_project": "html;css;js;jquery"
