@@ -51,7 +51,7 @@ jQuery(document).ready(function () {
                         } else {
                             div_project += "<img class='" + class_project + "-logo' src='src/img/" + code_project + "/" + data_project.img_project + "'>";
                         }
-                        div_project += "<div class='project-content " + class_project + "-content hidden'>";
+                        div_project += "<div class='project-content " + class_project + "-content' style='display:none;'>";
                         div_project += "<p>" + data_project.mini_description_project + "</p>";
                         // Langages
                         var languages_project = data_project.language_project.split(";");
