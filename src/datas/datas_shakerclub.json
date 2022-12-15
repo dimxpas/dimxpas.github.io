@@ -4,8 +4,8 @@
     "name_project": "ShakerClub",
     "img_project": "",
     "background_project": "bord.jpg",
-    "mini_description_project": "ShakerClub est un site de cocktail.",
-    "description_project": "ShakerClub est un vieux projet que j'avais commencé lors de ma formation à la WildCodeSchool, que j'ai terminé en 2020, mais qui a besoin d'être retravaillé... <br>Ce site liste les cocktails et leur recettes. <br>L'objectif principal était de me familiariser avec les API.",
+    "mini_description_project": "ShakerClub est un site de cocktails.",
+    "description_project": "ShakerClub est un vieux projet que j'avais commencé lors de ma formation à la WildCodeSchool. <br>J'ai terminé la partie API en 2020, mais la partie visuelle a besoin d'être retravaillé... <br>Ce site liste les cocktails et leur recette. <br>L'objectif principal était de me familiariser avec les API.",
     "pictures_project": "",
     "link_project": "https://dimxpas.github.io/ShakerClub/",
     "language_project": "html;css;js;jquery;tcdb"
