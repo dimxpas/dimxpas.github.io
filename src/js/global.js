@@ -2,10 +2,10 @@ jQuery(document).ready(function () {
 
     typewriter();
 
-    $("#typedtext").on("click", function () {
-        iSpeed = 0;
-        aSpeed = 0;
-    });
+//     $("#typedtext").on("click", function () {
+//         iSpeed = 0;
+//         aSpeed = 0;
+//     });
 
     $(".blurp").mouseenter(function () {
         $(this).addClass("animated blurpMove");
@@ -32,6 +32,9 @@ jQuery(document).ready(function () {
                 dataType: 'json',
                 success: function (datas_languages) {
                     var datas_language = datas_languages.language_project;
+                    var div_projects = "";
+                    var nb_projects = datas_projects.projects.length;
+                    var i = 0;
                     // boucle sur les projets
                     datas_projects.projects.forEach((data_project) => {
                         var code_project = data_project.code_name_project;
@@ -68,8 +71,34 @@ jQuery(document).ready(function () {
                         }
                         div_project += "<button class='btn-main" + class_btn + "' onclick=\"openInfosProject('" + class_project + "')\">En savoir plus</button>";
                         div_project += "</div></div></div>";
-                        // Ajout de l'affichage du projet dans la section projet
-                        $("#projects_section").append(div_project);
+                        div_projects += div_project;
+                        i++;
+                        // Ajout de l'affichage des projet dans la section projet
+                        if (nb_projects == i) {
+                            $(".loader-container").fadeOut(300, function() {
+                                $("#projects_section").append("<div id='projects_container' class='row' style='display:none;'>" + div_projects + "</div>");
+                                $("#projects_container").fadeIn(300);
+                                $(".project-block").on("mouseenter", function () {
+                                    name_block = $(this)[0].className.replace("project-block ", "").replace("-block", "");
+                                    $("#projects_section ." + name_block + "-logo").fadeOut(150, function() {
+                                        $("." + name_block + "-content").fadeIn(150);
+                                        spanSpeed = 0;
+                                        $("." + name_block + "-content .logo-language span").each(function(index) {
+                                            setTimeout(() => {
+                                                $(this).addClass("blurp animated blurpMove");
+                                            }, spanSpeed);
+                                            spanSpeed += 150;
+                                        });
+                                        $("." + name_block + "-content .logo-language span").removeClass("blurp animated blurpMove");
+                                    });
+                                });
+                                $(".project-block").on("mouseleave", function () {
+                                    name_block = $(this)[0].className.replace("project-block ", "").replace("-block", "");
+                                    $("." + name_block + "-content").fadeOut(100);
+                                    $("#projects_section ." + name_block + "-logo").fadeIn(150);
+                                });
+                            });
+                        }
                     });
 //                     Animation des block projets
                     $(".project-block").on("mouseenter mouseleave", function () {
@@ -103,35 +132,46 @@ var aText = new Array(
     "Bienvenue et bonne visite à vous !"
 );
 
-var iSpeed = 30; // time delay of print out
-var aSpeed = 500; // time delay of new line
-var iIndex = 0; // start printing array at this posision
-var iArrLength = aText[0].length; // the length of the text array
-var iScrollAt = 20; // start scrolling up at this many lines
+// Défilement du texte à la matrix
+// var iSpeed = 30; // time delay of print out
+// var aSpeed = 500; // time delay of new line
+// var iIndex = 0; // start printing array at this posision
+// var iArrLength = aText[0].length; // the length of the text array
+// var iScrollAt = 20; // start scrolling up at this many lines
 
-var iTextPos = 0; // initialise text position
-var sContents = ''; // initialise contents variable
-var iRow; // initialise current row
+// var iTextPos = 0; // initialise text position
+// var sContents = ''; // initialise contents variable
+// var iRow; // initialise current row
 
+// function typewriter() {
+//     sContents = ' ';
+//     iRow = Math.max(0, iIndex - iScrollAt);
+//     var destination = document.getElementById("typedtext");
+
+//     while (iRow < iIndex) {
+//         sContents += aText[iRow++] + '<br />';
+//     }
+//     destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
+//     if (iTextPos++ == iArrLength) {
+//         iTextPos = 0;
+//         iIndex++;
+//         if (iIndex != aText.length) {
+//             iArrLength = aText[iIndex].length;
+//             setTimeout("typewriter()", aSpeed);
+//         }
+//     } else {
+//         setTimeout("typewriter()", iSpeed);
+//     }
+// }
+
+// Affichage du texte
 function typewriter() {
     sContents = ' ';
-    iRow = Math.max(0, iIndex - iScrollAt);
-    var destination = document.getElementById("typedtext");
-
-    while (iRow < iIndex) {
+    iRow = 0;
+    while (iRow < 8) {
         sContents += aText[iRow++] + '<br />';
     }
-    destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
-    if (iTextPos++ == iArrLength) {
-        iTextPos = 0;
-        iIndex++;
-        if (iIndex != aText.length) {
-            iArrLength = aText[iIndex].length;
-            setTimeout("typewriter()", aSpeed);
-        }
-    } else {
-        setTimeout("typewriter()", iSpeed);
-    }
+    $("#typedtext").html(sContents);
 }
 
 function closeModal() {
@@ -183,7 +223,7 @@ function openInfosProject(id_project) {
             div_modal += "<div class='container hold-loader'><div class='loader-container'><span class='loader " + loader_class + "'></span></div><iframe id='myIframe' style='display:none;' src='" + datas_project.link_project + "' title='" + datas_project.name_project + "' width='130%' height='500'></iframe></div>";
             $(".modal-content").html(div_modal);
             $("#myModal").removeClass("hidden");
-            // Chargeent de l'iframe
+            // Chargement de l'iframe
             $("#myIframe").on("load", function() {
                 $(".loader-container").fadeOut(300);
                 setTimeout(() => {
