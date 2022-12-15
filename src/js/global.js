@@ -232,7 +232,7 @@ function openInfosProject(id_project) {
             // Chargement de l'iframe
             $("#myIframe").on("load", function() {
                 $(".hold-loader .loader-container").fadeOut(300, function() {
-                    $("#myIframe").fadeIn(500);
+                    $("#myIframe").fadeIn(300);
                 });
             });
             // Pour fermer la modal
