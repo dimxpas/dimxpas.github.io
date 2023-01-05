@@ -10,15 +10,6 @@
             "language_project": "html;css;php;js;jquery;vue"
         },
         {
-            "code_name_project": "shakerClub",
-            "code_class_project": "shakerclub",
-            "name_project": "ShakerClub",
-            "img_project": "",
-            "background_project": "bord.jpg",
-            "mini_description_project": "ShakerClub est un site de cocktail.",
-            "language_project": "html;css;js;jquery;tcdb"
-        },
-        {
             "code_name_project": "biskit",
             "code_class_project": "biskit",
             "name_project": "Biskit",
@@ -26,6 +17,15 @@
             "background_project": "bord.jpg",
             "mini_description_project": "Biskit est un lanceur de dès aléatoire avec des règles.",
             "language_project": "html;css;js;jquery"
+        },
+        {
+            "code_name_project": "shakerClub",
+            "code_class_project": "shakerclub",
+            "name_project": "ShakerClub",
+            "img_project": "",
+            "background_project": "bord.jpg",
+            "mini_description_project": "ShakerClub est un site de cocktail.",
+            "language_project": "html;css;js;jquery;tcdb"
         },
         {
             "code_name_project": "fm_production",
